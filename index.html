@@ -2,6 +2,7 @@
 <HEAD>
 <TITLE>Pure Skin Stokesley</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <style>
   * {box-sizing: border-box}
   body, html {
@@ -43,10 +44,26 @@
     background: url(https://i.imgur.com/gWciJx6.jpg) no-repeat center local;
     background-size: cover;
   }
+  .container {
+  position: relative;
+}
+  .contacts {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    color: white;
+    text-align: right;
+}
+  footer {
+    background-color: darkgrey;
+  }
   </style>
 </head>
 <body>
-  <h1>PURE SKIN <span style="font-size: 40px; font-variant: small-caps;">Stokesley</span></h1>
+  <div class="container"><h1>PURE SKIN <span style="font-size: 40px; font-variant: small-caps;">Stokesley</span></h1>
+    <div class="contacts"><i class="fas fa-mobile-alt"></i>  07871422784<br></br><i class="far fa-envelope"></i> kate@pureskinstokesley.co.uk</div>
+  </div>
   <button class="tablink" onclick="openPage('Home', this, '#777')" id="defaultOpen">Home</button>
   <button class="tablink" onclick="openPage('News', this, '#777')">Services</button>
   <button class="tablink" onclick="openPage('Contact', this, '#777')">Contact</button>
