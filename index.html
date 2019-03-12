@@ -85,6 +85,48 @@
   .info {
     overflow: auto;
   }
+
+  .accordion {
+    background-color: rgba(150, 150, 150, 0.8);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    max-width: 800px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #eee;
+    color: #777;
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+    color: #777;
+  }
+
+  .panel {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 18px;
+    background-color: rgba(180, 180, 180, 0.3);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
   </style>
 </head>
 <body>
@@ -102,27 +144,36 @@
   </div>
 
   <div id="News" class="tabcontent">
-    <div class="webcontent"><p><div class="info"><h2><img class="product" src="https://i.imgur.com/nCsRDj6.jpg">Ageing Treatment</h2>
-<p>Active and effective skin resurfacing solutions for the treatment of typical signs of ageing like photo-ageing, pigment changes, dull sallow appearance, superficial and medium expression lines.</p>
-<p>The pHformula A.G.E. solutions were specifically formulated as advanced anti-ageing skin resurfacing treatments to help correct typical signs of ageing.</p>
-<h4>Pre resurfacing home care</h4>
-<p>For best results and to reduce the risk of complications, it is recommended that patients should use the correct pHformula topical prescription products 2 to 3 weeks prior to the treatment.</p>
-<h4>Post resurfacing home care</h4>
-<p>Patients should use the pHformula E.X.F.O. cleanse for soothing post treatment cleansing and exfoliation.</p>
-<p>Patients should use the prescribed pHformula recovery treatment to enhance overall results and to assist with the post-treatment healing processes.</p>
-<p><em>The use of the pHformula U.V. protect SPF 30+ or SPF 50+ is essential to protect the skin from UV radiation. Please note that it is recommended that extended sun exposure must be avoided, especially in the 10 days prior to the treatment.</em></p></div>
-<hr />
-<div class="info"><h2><img class="product" src="https://i.imgur.com/wzQg0S7.jpg">Hyperpigmentation treatment</h2>
-<p>The unique pHformula powerclay formula used in the M.E.L.A. resurfacing treatments is a powerful hyperpigmentation treatment designed to reduce the accumulation of epidermally located melanin. It effectively inhibits the enzymatic activity of tyrosinase, whilst stimulating epidermal differentiation and therefore accelerates epidermal cellular turnover causing the removal of already formed melanin pigment. Due to the innovative highly effective mode of action, significant visible results are obtained with minimal risk.</p>
+
+<center>
+        <button class="accordion">Ageing Treatment</button>
+        <div class="panel">
+          <p><img class="product" src="https://i.imgur.com/nCsRDj6.jpg">Active and effective skin resurfacing solutions for the treatment of typical signs of ageing like photo-ageing, pigment changes, dull sallow appearance, superficial and medium expression lines.</p>
+          <p>The pHformula A.G.E. solutions were specifically formulated as advanced anti-ageing skin resurfacing treatments to help correct typical signs of ageing.</p>
+          <h4>Pre resurfacing home care</h4>
+          <p>For best results and to reduce the risk of complications, it is recommended that patients should use the correct pHformula topical prescription products 2 to 3 weeks prior to the treatment.</p>
+          <h4>Post resurfacing home care</h4>
+          <p>Patients should use the pHformula E.X.F.O. cleanse for soothing post treatment cleansing and exfoliation.</p>
+          <p>Patients should use the prescribed pHformula recovery treatment to enhance overall results and to assist with the post-treatment healing processes.</p>
+          <p><em>The use of the pHformula U.V. protect SPF 30+ or SPF 50+ is essential to protect the skin from UV radiation. Please note that it is recommended that extended sun exposure must be avoided, especially in the 10 days prior to the treatment.</em></p>
+
+        </div>
+
+        <button class="accordion">Hyperpigmentation treatment</button>
+        <div class="panel">
+<p><img class="product" src="https://i.imgur.com/wzQg0S7.jpg"><p>The unique pHformula powerclay formula used in the M.E.L.A. resurfacing treatments is a powerful hyperpigmentation treatment designed to reduce the accumulation of epidermally located melanin. It effectively inhibits the enzymatic activity of tyrosinase, whilst stimulating epidermal differentiation and therefore accelerates epidermal cellular turnover causing the removal of already formed melanin pigment. Due to the innovative highly effective mode of action, significant visible results are obtained with minimal risk.</p>
 <h4>Pre resurfacing home care</h4>
 <p>For best results and to reduce the risk of complications, it is recommended that patients use the correct pHformula topical prescription products 2 – 3 weeks prior to the treatment.</p>
 <h4>Post resurfacing home care</h4>
 <p>Patients should use the pHformula E.X.F.O. cleanse for soothing post treatment cleansing and exfoliation.</p>
 <p>Patients should use the prescribed pHformula recovery treatment to enhance overall results and to assist with the post-treatment healing processes.</p>
-<p><em>The use of the pHformula U.V. protect SPF 30+ is essential to protect the skin from UV radiation. Please note that it is recommended that extended sun exposure must be avoided, especially in the 10 days prior to the treatment.</em></p></div>
-<hr />
-<div class="info"><h2><img class="product" src="https://i.imgur.com/et0Njit.jpg">Acne Treatment</h2>
-<p>The unique combination of actives in the pHformula A.C. solutions were specifically formulated to correct the main acneic manifestations such as comedones, papules and pustules. It was designed to act on the 4 factors that trigger acne.</p>
+<p><em>The use of the pHformula U.V. protect SPF 30+ is essential to protect the skin from UV radiation. Please note that it is recommended that extended sun exposure must be avoided, especially in the 10 days prior to the treatment.</em></p>
+
+          </div>
+
+        <button class="accordion">Acne Treatment</button>
+        <div class="panel">
+<p><img class="product" src="https://i.imgur.com/et0Njit.jpg"><p>The unique combination of actives in the pHformula A.C. solutions were specifically formulated to correct the main acneic manifestations such as comedones, papules and pustules. It was designed to act on the 4 factors that trigger acne.</p>
 <ol>
 <li>Seborrhoea</li>
 <li>Hyperkeratinisation</li>
@@ -134,25 +185,47 @@
 <h4>Post resurfacing home care</h4>
 <p>Patients should use the pHformula E.X.F.O. cleanse for soothing post treatment cleansing and exfoliation.</p>
 <p>Patients should use the prescribed pHformula recovery treatment to enhance overall results and to assist with the post-treatment healing processes.</p>
-<p><em>The use of the pHformula U.V. protect SPF 30+ o SPF 50+ is essential to protect the skin from UV radiation. Please note that it is recommended that extended sun exposure must be avoided, especially in the 10 days prior to the treatment.</em></p></div>
-<hr />
-<div class="info"><h2><img class="product" src="https://i.imgur.com/qsSOtU5.jpg">Chronic Redness treatment</h2>
-<p>An active and effective complex for complete restoration, chronic redness and rosacea prone skin. Specifically formulated with anti-microbial activity to help reduce redness and prevent relapses.</p>
+<p><em>The use of the pHformula U.V. protect SPF 30+ o SPF 50+ is essential to protect the skin from UV radiation. Please note that it is recommended that extended sun exposure must be avoided, especially in the 10 days prior to the treatment.</em></p>
+          </div>
+        <button class="accordion">Chronic Redness treatment</button>
+        <div class="panel">
+<p><img class="product" src="https://i.imgur.com/qsSOtU5.jpg"><p>An active and effective complex for complete restoration, chronic redness and rosacea prone skin. Specifically formulated with anti-microbial activity to help reduce redness and prevent relapses.</p>
 <h4>Pre resurfacing home care</h4>
 <p>For best results and to reduce the risk of complications, it is recommended that patients should use the correct pHformula topical prescription products 2 – 3 weeks prior to the treatment.</p>
 <h4>Post resurfacing home care</h4>
 <p>Patients should use the pHformula E.X.F.O. cleanse for soothing post treatment cleansing and exfoliation.</p>
 <p>Patients should use the prescribed pHformula recovery treatment to enhance overall results and to assist with the post-treatment healing processes.</p>
-<p><em>The use of the pHformula U.V. protect SPF 30+ or SPF 50+ is essential to protect the skin from UV radiation. Please note that it is recommended that extended sun exposure must be avoided, especially in the 10 days prior to the treatment.</em></p></div>
-<hr />
-<div class="info"><h2><img class="product" src="https://i.imgur.com/sAu0y6B.jpg">Radiance boost treatment</h2>
-<p>Maximum Vitamin C concentration levels are achieved in a highly absorbable medium. An advanced system which addresses early signs of cutaneous damage.</p>
-<p>L-ascorbic acid helps to strengthen the skin’s collagen and elastin network. The treatment is suited to use on photo-aged and pigmented skin and can help improve uneven pigmentation when performed regularly.</p></div>
-<hr /></p>
-  </div></div>
+<p><em>The use of the pHformula U.V. protect SPF 30+ or SPF 50+ is essential to protect the skin from UV radiation. Please note that it is recommended that extended sun exposure must be avoided, especially in the 10 days prior to the treatment.</em></p>
+          </div>
+        <button class="accordion">Radiance boost treatment</button>
+        <div class="panel">
+<p><img class="product" src="https://i.imgur.com/sAu0y6B.jpg"><p>Maximum Vitamin C concentration levels are achieved in a highly absorbable medium. An advanced system which addresses early signs of cutaneous damage.</p>
+<p>L-ascorbic acid helps to strengthen the skin’s collagen and elastin network. The treatment is suited to use on photo-aged and pigmented skin and can help improve uneven pigmentation when performed regularly.</p>
+            </div>
+
+</center>
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
+
+
+  </div>
 
   <div id="Contact" class="tabcontent">
-    <div class="webcontent"><p><div class="info"><div style="float: left"><i class="fas fa-mobile-alt"></i>  <a href="tel:07871422784">07871422784</a><br></br><a href="mailto:contact@puresk.in"><i class="far fa-envelope"></i> contact@puresk.in</a><br></br><a href="https://goo.gl/maps/Wkf55aEKBcN2"><i class='fas fa-globe-americas'></i>  63 High Street<br>Stokesley<br>TS9 5BQ</a></div><div style="float: right;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d144.91416424100174!2d-1.1942693936646775!3d54.469525061550684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3bf1f9fea88a0163!2sPure+Hairdressing!5e0!3m2!1sen!2suk!4v1551781652486" width="320" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></p>
+    <div class="webcontent"><p><div class="info"><div style="float: left"><i class="fas fa-mobile-alt"></i>  <a href="tel:07871422784">07871422784</a><br></br><a href="mailto:contact@puresk.in"><i class="far fa-envelope"></i> contact@puresk.in</a><br></br><a href="https://goo.gl/maps/Wkf55aEKBcN2" target="_blank"><i class='fas fa-globe-americas'></i>  63 High Street<br>Stokesley<br>TS9 5BQ</a></div></p>
   </div></div></div>
 
   <div id="About" class="tabcontent">
@@ -175,5 +248,6 @@
   }
   document.getElementById("defaultOpen").click();
   </script>
+
 </body>
 </htmtl>
